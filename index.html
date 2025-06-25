@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="calculator">
+              <input type="text" id="result" class="calculatorScreen" placeholder="0" >
+                <table cellspacing="10">
+                    <tr>
+                        <td><button id="ac" onclick="ac()" class="yellow">AC</button></td>
+                        <td><button id="del" onclick="del()" class="yellow">DEL</button></td>
+                        <td><button id="divide" onclick="divide()" class="yellow">/</button></td>
+                        <td><button id="multiply" onclick="multiply()" class="yellow">*</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="seven" onclick="seven()">7</button></td>
+                        <td><button id="eight" onclick="eight()">8</button></td>
+                        <td><button id="nine" onclick="nine()">9</button></td>
+                        <td><button id="subtract" class="yellow" onclick="subtract()">-</button></td>
+
+                    </tr>
+                    <tr>
+                        <td><button id="six" onclick="six()">6</button></td>
+                        <td><button id="five" onclick="five()">5</button></td>
+                        <td><button id="four" onclick="four()">4</button></td>
+                        <td><button id="addition" class="yellow" onclick="addition()">+</button></td>
+
+                    </tr>
+                    <tr>
+                        <td><button id="one" onclick="one()">1</button></td>
+                        <td><button id="two" onclick="two()">2</button></td>
+                        <td><button id="three" onclick="three()">3</button></td>
+                        <td rowspan="2" class><button
+                              id="calculation"  class="yellow" onclick="calculation()">=</button></td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button id="zero">0</button></td>
+                        <td><button id="dot">.</button></td>
+                        <!-- <td><button></button></td> -->
+                        <!-- <td><button></button></td> -->
+
+                    </tr>
+                </table>
+                <p class="details">Developed by <span>Usman Coder</span></p>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>

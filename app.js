@@ -1,8 +1,6 @@
 let result = document.getElementById("result");
 let userValue = "";
 
-
-
 function ac (){
     result.value =  userValue;
 }

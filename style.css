@@ -5,7 +5,7 @@
   align-items: center;
 }
 .calculator {
-  width: 63vh;
+  width: 60vh;
   height: 98vh;
   margin: 0% auto;
   display: flex;
@@ -17,6 +17,7 @@
   border: 2px solid #f69906;
 }
 .calculator input {
+    /* width: 57vh; */
   background-color: black;
   border-width: 0px;
   text-align: right;
@@ -30,7 +31,7 @@ input:focus {
   border: none; /* optional */
 }
 .calculatorScreen {
-  width: 59vh;
+  width: 57vh;
   height: 30vh;
   margin-top: 5px;
   /* border: 1px solid #f69906; */
@@ -41,11 +42,12 @@ input:focus {
   font-weight: bold;
 }
 table {
-  width: 63vh;
+  width: 60vh;
   height: 60vh;
+  text-align: center;
 }
 table tr td {
-  width: 30px;
+  width: 50px;
   height: 30px;
 
   border-radius: 15px;
@@ -53,7 +55,7 @@ table tr td {
   /* padding: 10px 10px; */
 }
 button {
-  width: 100%;
+  width: 90%;
   height: 100%;
   border-radius: 15px;
   background-color: gray;
@@ -84,7 +86,7 @@ button:hover {
 
 @media screen and (max-width: 720px) and (min-width: 200px) {
   .calculator {
-    width: 452px;
+    width: 100%;
     height: 720px;
     margin: 0% auto;
     display: flex;
@@ -93,15 +95,15 @@ button:hover {
     justify-content: center;
     background-color: black;
     border-radius: 14px;
-    border: 2px solid #f69906;
+    border: 2px solid red;
   }
   .calculatorScreen {
-    width: 440px;
+    width: 90%;
     height: 200px;
     margin-top: 5px;
     /* border: 1px solid #f69906; */
     border-radius: 10px;
-    color: #f69906;
+    color: red;
     font-size: 35px;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
@@ -111,22 +113,23 @@ button:hover {
     align-items: last baseline;
   }
   table {
-    width: 450px;
+    width: 90%;
     height: 500px;
+     row-gap: 20px;
   }
   table tr td {
-    width: 40px;
-    height: 40px;
+    /* width: 10%;
+    height: 10%; */
 
     border-radius: 15px;
 
     /* padding: 10px 10px; */
   }
-  button {
+  table tr td button {
     width: 100%;
     height: 100%;
     border-radius: 15px;
-    background-color: gray;
+    background-color: blue;
     font-size: 30px;
     font-weight: 700;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
@@ -140,6 +143,19 @@ button:hover {
     transform: scale(1.05);
   }
   .yellow {
-    background-color: #f69906;
+    background-color : rgb(247, 1, 1) ;
+    
   }
+  .details {
+  color: rgb(247, 43, 43);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+}
+.details span {
+  color: rgb(0, 0, 255);
+  font-family: initial;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 18px;
+}
 }
